@@ -1,20 +1,21 @@
 # 🎬 Movie Booking REST API
 
-![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+<div align="center">
 
+![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi)
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-336791?logo=postgresql)
-
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-D71F00?logo=sqlalchemy)
 
 ![Alembic](https://img.shields.io/badge/Alembic-Migrations-green)
-
-![JWT](https://img.shields.io/badge/Auth-JWT-orange)
-
 ![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063)
 
+![JWT](https://img.shields.io/badge/Auth-JWT-orange)
 ![REST API](https://img.shields.io/badge/API-REST-blueviolet)
+
+
+</div>
 
 A production-style **Movie Booking REST API** built with **FastAPI**, **PostgreSQL**, **SQLAlchemy**, and **Alembic**.
 
