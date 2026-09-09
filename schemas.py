@@ -143,7 +143,7 @@ class SeatsForShow(BaseModel):
 
 class BookingCreate(BaseModel):
     show_id: int = Field(gt=0)
-    seat_ids: list[int]
+    seat_ids: list[int] = Field(min_length=1)
 
 
 class BookingResponse(BaseModel):
