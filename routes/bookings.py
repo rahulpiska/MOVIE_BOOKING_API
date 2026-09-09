@@ -44,9 +44,11 @@ def create_booking(create:BookingCreate,
     
     booking_seats = (
         db.query(BookingSeat)
+        .join(Booking, Booking.id == BookingSeat.booking_id)
         .filter(
             BookingSeat.show_id == show.id,
-            BookingSeat.seat_id.in_(create.seat_ids)
+            BookingSeat.seat_id.in_(create.seat_ids),
+            Booking.status == BookingStatus.CONFIRMED
         )
         .all()
     )
