@@ -3,6 +3,7 @@
 
 # Environment Variables
 .env
+test.env
 
 # Python
 __pycache__/
