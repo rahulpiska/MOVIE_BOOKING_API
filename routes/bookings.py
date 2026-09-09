@@ -183,6 +183,9 @@ def update_status(booking_id: int,
     
     booking.status = BookingStatus.CANCELLED
 
+    for booking_seat in booking.booking_seats:
+        db.delete(booking_seat)
+
     db.commit()
     db.refresh(booking)
 
