@@ -3,10 +3,13 @@ from sqlalchemy.orm import sessionmaker
 
 from database import Base
 import models
+from dotenv import load_dotenv
+
+import os
+load_dotenv()
 
 
-TEST_DATABASE_URL = "postgresql+psycopg://postgres:Rahul123@localhost:5432/movie_booking_test_db"
-
+TEST_DATABASE_URL = os.getenv("TEST_DATABASE_URL")
 test_engine = create_engine(TEST_DATABASE_URL)
 
 Base.metadata.create_all(bind=test_engine)
